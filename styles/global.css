@@ -1,0 +1,80 @@
+/* The animation code */
+@keyframes example {
+  0% {
+    background-color: gainsboro;
+    left: 0px;
+    top: 0px;
+  }
+  10% {
+    background-color: rgb(146, 173, 187);
+    left: 0px;
+    top: 0px;
+  }
+  20% {
+    background-color: rgb(69, 129, 123);
+    left: 200px;
+    top: 0px;
+  }
+  30% {
+    background-color: rgb(24, 70, 80);
+    left: 0px;
+    top: 0px;
+  }
+  40% {
+    background-color: black;
+    left: 0px;
+    top: 0px;
+  }
+  59% {
+    background-color: black;
+    left: 0px;
+    top: 0px;
+  }
+  60% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+  }
+  61% {
+    background-color: black;
+    left: 0px;
+    top: 0px;
+  }
+  89% {
+    background-color: black;
+    left: 0px;
+    top: 0px;
+  }
+  90% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+  }
+  91% {
+    background-color: black;
+    left: 0px;
+    top: 0px;
+  }
+  98% {
+    background-color: black;
+    left: 0px;
+    top: 0px;
+  }
+  99% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: black;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.dark {
+  background-color: black;
+  color: cornsilk;
+  animation-name: example;
+  animation-duration: 4s;
+}
