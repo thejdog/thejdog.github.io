@@ -1,1 +1,0 @@
-# thejdog.github.io
