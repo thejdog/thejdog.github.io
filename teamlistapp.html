@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team app</title>
+<script>
+function addPerson() {
+var newPerson = document.createElement("div");
+newPerson.innerHTML = document.getElementById("box").value;
+newPerson.onclick = removePerson;
+document.getElementById("team").appendChild(newPerson);
+saveTeam();
+}
+function removePerson() {
+document.getElementById("team").removeChild(this);
+saveTeam();
+}
+function saveTeam() {
+localStorage.storedTeam = document.getElementById("team").innerHTML;
+}
+function loadTeam() {
+document.getElementById("team").innerHTML = localStorage.storedTeam;
+for(var i = 0; i < list.children.length; i++) {
+list.children[i].onclick = removePerson;
+}
+}
+</script>
+</head>
+<body>
+<p>Create your own team!</p>
+<br/>
+<input type="text" id="box" value="type here to add new person"/>
+<br/>
+<input type="button" value="add person" onclick="addPerson();"/>
+<br/>
+<div id="team"></div>
+<script>
+if(localStorage.storedTeam) {
+loadTeam();
+}
+</script>
+</body>
+</html>
