@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
+  
     <title>to-do list app</title>
+	
     <script>
       function addItem() {
         var newItem = document.createElement("div");
@@ -24,20 +28,36 @@
         }
       }
     </script>
+	
   </head>
+  
   <body>
+  
     <a href="./thejdogopen.html">my pages</a>
+	<br/>
+	
+	<a href="https://www.youtube.com/@thejdog1234">my youtube channel</a>
+	<br/>
+	
     <p>Create your own to-do list!</p>
     <br />
+	
     <input type="text" id="box" value="type here to add new task" />
     <br />
+	
     <input type="button" value="add item" onclick="addItem();" />
     <br />
+	
     <div id="list"></div>
+	
     <script>
       if (localStorage.storedList) {
         loadList();
       }
     </script>
+	
+	<a href="https://www.youtube.com/@thejdog1234">my youtube channel</a>
+	
   </body>
+  
 </html>
